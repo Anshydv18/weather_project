@@ -2,3 +2,6 @@ body{
   background-image: url(/src/assets/karsten-wurth-0w-uTa0Xz7w-unsplash.jpg);
   background-size: cover;
 }
+@media screen  and (max-width :600px){
+  
+}
