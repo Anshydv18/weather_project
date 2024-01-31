@@ -85,8 +85,8 @@ function App() {
           </div>
         }
         {
-          placeData && <div className='flex flex-row justify-evenly  w-full max-w-full mx-[-10px] bg-[rgb(0,0,0,0.4)] fixed bottom-0 left-0 max-sm:flex-col items-center'>
-            <div className='w-[50%] mx-2 flex flex-col gap-y-2 px-5 py-2'>
+          placeData && <div className='flex flex-row justify-evenly  w-full max-w-full mx-[-10px] bg-[rgb(0,0,0,0.4)] fixed bottom-0 left-0 max-sm:flex-col items-center '>
+            <div className='w-[50%] mx-2 flex flex-col gap-y-2 px-5 py-2 max-sm:w-full'>
               <div className='flex justify-between'>
               <p>Wind speed</p>
               <p>{placeData.wind.speed} km/h</p>
@@ -105,7 +105,7 @@ function App() {
               </div>
             </div>
 
-            <div className='w-[50%] mx-2 px-5 py-2'>
+            <div className='w-[50%] mx-2 px-5 py-2 max-sm:w-full'>
               <div className='flex justify-between'>
               <p>Temperature Max</p>
               <p>{(placeData.main.temp_max-273.15).toFixed(1)}</p>
