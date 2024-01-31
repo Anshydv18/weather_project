@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full h-screen p-2 text-white max-sm:flex flex-col items-center mx-auto'>
+      <div className='w-full h-screen p-2 text-white max-sm:flex flex-col items-center '>
         <div className='flex  w-full max-w-sm bg-[rgb(0,0,0,0.4)] mx-auto rounded-full m-4'>
           <input type="text" className=' bg-transparent w-full px-10 py-2 outline-none overflow-hidden' 
           placeholder='location'
@@ -49,8 +49,8 @@ function App() {
           <button className='px-2 py-1 bg-red-500 rounded-full' onClick={getWeatherData}><SearchIcon/></button>
         </div>
         {
-          placeData && <div className=' flex flex-row justify-between  w-full max-w-full max-sm:flex-col'>
-            <div className='w-full max-w-[400px] bg-[rgb(0,0,0,0.4)] h-[200px] rounded-lg px-3 py-2 my-2 gap-x-11 ml-8'>
+          placeData && <div className=' flex flex-row justify-between  w-full max-w-full px-4 max-sm:flex-col items-center'>
+            <div className='w-full max-w-[400px] bg-[rgb(0,0,0,0.4)] h-[200px] rounded-lg px-3 py-2 my-2 gap-x-11 '>
             <div className='flex items-center ml-5 my-2 gap-x-2'>
               {
                 placeData.weather[0].main=="Fog" &&
@@ -79,13 +79,13 @@ function App() {
               <p className='text-[25px] text-gray-400'>{placeData.weather[0].main}</p>
             </div>
             </div>
-            <div className='w-full max-w-[400px] h-[200px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 ml-8'>
+            <div className='w-full max-w-[400px] h-[200px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 '>
              <span className='text-[30px]'>{time}</span>
             </div>  
           </div>
         }
         {
-          placeData && <div className='flex flex-row justify-evenly  w-full max-w-full mx-[-10px] bg-[rgb(0,0,0,0.4)] fixed bottom-0 left-0 max-sm:flex-col'>
+          placeData && <div className='flex flex-row justify-evenly  w-full max-w-full mx-[-10px] bg-[rgb(0,0,0,0.4)] fixed bottom-0 left-0 max-sm:flex-col items-center'>
             <div className='w-[50%] mx-2 flex flex-col gap-y-2 px-5 py-2'>
               <div className='flex justify-between'>
               <p>Wind speed</p>
