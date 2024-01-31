@@ -79,7 +79,7 @@ function App() {
               <p className='text-[25px] text-gray-400'>{placeData.weather[0].main}</p>
             </div>
             </div>
-            <div className='w-full max-w-[400px] h-[200px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 '>
+            <div className='w-full max-w-[400px] h-[200px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 flex justify-center items-center'>
              <span className='text-[30px]'>{time}</span>
             </div>  
           </div>
