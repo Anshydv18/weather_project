@@ -50,7 +50,7 @@ function App() {
         </div>
         {
           placeData && <div className=' flex  justify-between  w-full max-w-full'>
-            <div className='w-full max-w-sm bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 ml-8'>
+            <div className='w-full max-w-[400px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 ml-8'>
             <div className='flex items-center ml-5 my-2 gap-x-2'>
               {
                 placeData.weather[0].main=="Fog" &&
@@ -79,17 +79,17 @@ function App() {
               <p className='text-[25px] text-gray-400'>{placeData.weather[0].main}</p>
             </div>
             </div>
-            <div className='w-full max-w-[300px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 mr-8 flex justify-center items-center'>
+            <div className='w-full max-w-[350px] bg-[rgb(0,0,0,0.4)] rounded-lg px-3 py-2 my-2 gap-x-11 mr-8 flex justify-center items-center'>
              <span className='text-[30px]'>{time}</span>
             </div>  
           </div>
         }
         {
           placeData && <div className='flex justify-evenly items-end w-full max-w-full mx-[-10px] bg-[rgb(0,0,0,0.4)] fixed bottom-0'>
-            <div className='w-[50%] mx-2 flex flex-col gap-y-2 px-5'>
+            <div className='w-[50%] mx-2 flex flex-col gap-y-2 px-5 py-2'>
             <div className='flex justify-between'>
-              <p>Pressure</p>
-              <p>{placeData.main.pressure}</p>
+              <p>Wind speed</p>
+              <p>{placeData.wind.speed} km/h</p>
               </div>
               <div className='flex justify-between'>
               <p>Temperature</p>
@@ -105,7 +105,7 @@ function App() {
               </div>
             </div>
 
-            <div className='w-[50%] mx-2 px-5'>
+            <div className='w-[50%] mx-2 px-5 py-2'>
             <div className='flex justify-between'>
               <p>Temperature Max</p>
               <p>{(placeData.main.temp_max-273.15).toFixed(1)}</p>
